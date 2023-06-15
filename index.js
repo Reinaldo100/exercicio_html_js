@@ -1,7 +1,4 @@
-const form = document.getElementById('form-number')
-//const primeiroNumero = document.getElementById('primeiro-numero')
-//let formEvalido = false;
-
+const form = document.getElementById('form-number');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
