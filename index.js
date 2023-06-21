@@ -13,6 +13,7 @@ form.addEventListener('submit', function(e) {
             const containerMessageSucesso =  document.querySelector('.success-message');
             containerMessageSucesso.innerHTML = menssagemValida;
             containerMessageSucesso.style.display = 'block';
+            document.querySelector('.error-message').style.display = 'none';
 
             document.getElementById('primeiro-numero').value = '';
             document.getElementById('segundo-numero').value = '';
@@ -21,8 +22,12 @@ form.addEventListener('submit', function(e) {
             const containerMessageSucesso =  document.querySelector('.error-message');
             containerMessageSucesso.innerHTML = menssagemErro;
             containerMessageSucesso.style.display = 'block';
+            document.querySelector('.success-message').style.display = 'none';
 
+            document.getElementById('primeiro-numero').value = '';
+            document.getElementById('segundo-numero').value = '';
         }
+        
     }
 
     comparaNumero(primeiroNumero, segundoNumero)
